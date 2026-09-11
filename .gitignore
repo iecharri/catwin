@@ -1,0 +1,13 @@
+# Copias de seguridad
+*.bak
+_backups/
+
+# Logs
+*.log
+LOG
+log*.txt
+
+# Ficheros temporales de editores
+*~
+# Configuración local con credenciales
+config.php

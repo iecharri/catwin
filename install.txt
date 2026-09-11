@@ -1,0 +1,31 @@
+CatWin Net
+Copyright (C) 2000-2015  Antonio Grandío Botella http://www.antoniograndio.com
+Copyright (C) 2000-2015  Inmaculada Echarri San Adrián http://www.inmaecharri.com
+
+Instalación:
+
+Copiar todos los ficheros en subdirectorio catwin del directorio base de Apache.
+
+En config.php cambiar los valores de server, user y password por unos adecuados del servidor MySql.
+En config.php cambiar el valores de mysqldump por el adecuado del servidor para poder hacer copias de seguridad.
+
+Cuando se creen empresas se generarán automáticamente las bases de datos MySql.
+
+Si se utiliza un servidor que no permite crear bases de datos a través de Catwin se ha de crear por algún otro método, phpmyadmin o panel de control.
+
+-------------------------------------
+
+Para crear listados:
+
+crear un alias en apache: Alias /catwin/ "/directorio/listados/catwin/"
+
+En config.php crear la variable PATH:
+
+define('PATH', '/directorio/listados/catwin/');
+
+
+En Windows y si no se tiene opcion de cambiar el  Alias /catwin/ crear la variable PATH:
+
+define('PATH', 'catwin/');
+
+y sustituir "/catwin/" por "catwin/" en otroslistados.php y listados1_1.php
