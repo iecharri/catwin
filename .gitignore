@@ -1,6 +1,7 @@
 # Copias de seguridad
 *.bak
-_backups/
+_backups/*
+!_backups/.gitkeep
 
 # Logs
 *.log
