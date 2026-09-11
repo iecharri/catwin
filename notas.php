@@ -113,7 +113,7 @@ function anadir1($link) {
 
 	if (PRUEBA == 1) {
 	// *** SERVER_PRUEBAS
-	if ($_SESSION['empresa'] == "nuevocat") {
+	if ($_SESSION['empresa'] == "nuevocat") {
 		return "<p /><span class='rojo b'>Opci&oacute;n no disponible en empresa Nuevocat</span>";
 	}
 	// *** SERVER_PRUEBAS
@@ -148,7 +148,7 @@ function editar1($link,$id) {
 
 	if (PRUEBA == 1) {
 	// *** SERVER_PRUEBAS
-		if ($_SESSION['empresa'] == "nuevocat") {
+	if ($_SESSION['empresa'] == "nuevocat") {
 		return "<p /><span class='rojo b'>Opci&oacute;n no disponible en empresa Nuevocat</span>";
 	}
 	// *** SERVER_PRUEBAS
