@@ -534,7 +534,7 @@ $sql = "CREATE TABLE IF NOT EXISTS `referers` (
 )";
 $link->query($sql) or die ("No ha sido posible crear la tabla 'referers'");
 // *** SERVER_PRUEBAS
-}
+}
 # --------------------------------------------------------
 
 #
@@ -738,4 +738,3 @@ function sanear($string)
     return $string;
 }
 
-?>

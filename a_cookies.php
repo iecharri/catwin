@@ -35,4 +35,3 @@ if ($_POST['color']) {
 
 $c = $_SESSION['c'];
 
-?>

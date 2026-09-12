@@ -96,4 +96,3 @@ $desde = "gcfacrec";
 $baseimp = $fila['totbruto'];
 include ("gcinvent1.php");
 
-?>

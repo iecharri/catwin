@@ -36,4 +36,3 @@ $link->query("DELETE FROM invent WHERE facrec = '$fact' AND codigo = '$codigo'")
 $result = $link->query("DELETE FROM factrec WHERE fact = '$fact' AND codigo = '$codigo'") or die ("<p />El usuario $usuario no tiene permisos para borrar Facturas");
 
 if ($fila[0]) {$mensaje = "<p /><span class='rojo b'>Recordar que la Factura Recibida borrada est&aacute; asociada al Asiento <a href='editasi2.php?asiento=$fila[0]'>$fila[0]</a></span><p />";}
-?>

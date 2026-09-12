@@ -35,4 +35,3 @@ header ("Content-Disposition: inline;\n\n");
 header("Content-Type: $fila[0]");
 print $fila[1];
 
-?>

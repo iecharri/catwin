@@ -96,4 +96,3 @@ while($row=$rs->fetch_array(MYSQLI_BOTH)) {
 
 echo "</tr></table>";
 
-?>

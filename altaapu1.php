@@ -49,4 +49,3 @@ if (!$ip) {$ip = $_SERVER['REMOTE_ADDR'];}
 $sql = "INSERT INTO apuntes (asiento, fecha, tipo, cuenta, concepto, debe, haber, ip) VALUES ('$asiento', '$b', '$tipo', '$cuenta1', '$concepto', '$debe', '$haber', '$ip')";
 if (!$link->query($sql)) die ("El usuario $usuario no tiene permiso para a&ntilde;adir Apuntes.");
 
-?>

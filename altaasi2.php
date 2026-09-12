@@ -83,4 +83,3 @@ if (trim($mensaje) == "" AND $asiento <= 9999999000) {
 
 }
 
-?>

@@ -55,4 +55,3 @@ fclose ($f);
 
 $array = "";
 
-?>

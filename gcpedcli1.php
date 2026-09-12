@@ -90,4 +90,3 @@ if ($ped != 0) {
 	echo "<p />No hay pedidos para este Cliente";
 }
 
-?>

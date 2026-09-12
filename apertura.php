@@ -178,4 +178,3 @@ function existebd($empresa, $link) {
 	return "<p />No existe la Empresa <span class='b'>$empresa</span>.";
 }
 
-?>

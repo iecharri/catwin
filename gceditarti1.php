@@ -31,4 +31,3 @@ $fechap = "20".$a[2]."-".$a[1]."-".$a[0];
 $fechar = "20".$b[2]."-".$b[1]."-".$b[0];
 $result = $link->query("UPDATE invent SET artic = '$artic', situaci_n = '$situaci_n',  fechap = '$fechap', fechar = '$fechar', p_coste = '$p_coste', tipo = '$tipo' WHERE row_id = '$row_id'") or die ("<p />El usuario $usuario no tiene permisos para modificar Inventario"); 
 
-?>

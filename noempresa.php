@@ -38,4 +38,3 @@ if (!$link OR !$_SESSION['empresa']) {
 	echo "</div></body></html>";
 	exit;
 }
-?>

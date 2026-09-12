@@ -97,4 +97,3 @@ $baseimp = $fila['totpedido'];
 $desde = "gcpedidos";
 include ("gcinvent1.php");
 
-?>

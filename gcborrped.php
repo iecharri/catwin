@@ -28,4 +28,3 @@ $link->query("UPDATE invent SET n_ped = '' WHERE n_ped = '$n_ped'") or die ("<p 
 
 $result = $link->query("DELETE FROM pedidos WHERE n_ped = '$n_ped'") or die ("<p />El usuario $usuario no tiene permisos para borrar Pedidos");
 
-?>

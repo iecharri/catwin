@@ -40,10 +40,12 @@ if (PRUEBA == 1) {
 // *** SERVER_PRUEBAS
 if ($_GET['emp'] == 1) {
 	$_POST['usuario1'] = 'administrador';
-	$_POST['empresa1'] = 'nuevocat';
+	//$_POST['empresa1'] = 'nuevocat';
+	$_POST['empresa1'] = BDPRUEBA;
 	$_POST['password1'] = "admin";
 }
-// *** SERVER_PRUEBAS}
+// *** SERVER_PRUEBAS
+}
 
 if ($_POST['password1'] AND ADAPTARTABLAS == 1) {
 	$sel = mysqli_select_db($link,$_POST['empresa1']);
@@ -122,4 +124,3 @@ if (!$fila[0]) {
 	$link->query("UPDATE empresa SET ultasi = '$fila1[0]'");
 }
 
-?>

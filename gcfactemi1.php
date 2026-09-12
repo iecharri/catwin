@@ -48,4 +48,3 @@ $result = $link->query("UPDATE pedidos SET n_ = '$n_' WHERE n_ped = '$n_ped'") o
 
 echo "<p />Se ha asignado el nº de Factura <span class='b'>$n_</span> al Pedido <span class='b'>$n_ped</span>.";
 
-?>

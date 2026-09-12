@@ -177,4 +177,3 @@ function optioniva($link,$tipoiva) {
 	}	
 }
 
-?>

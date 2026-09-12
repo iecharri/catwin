@@ -128,4 +128,3 @@ echo "</td>\n";
 
 echo "<td class='blanco dcha'>".number_format($row[0]*$_SESSION['moneda'],$_SESSION['deci'],',','.')."</td></tr></table>";
 
-?>

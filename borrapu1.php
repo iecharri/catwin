@@ -39,4 +39,3 @@ if ($result->num_rows == 0)
 $row_id = 0;
 //$nuevo = 0;
 
-?>

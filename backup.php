@@ -44,4 +44,3 @@ function r_rmdir($dir) {
         //rmdir($dir); 
     }
 }
-?>

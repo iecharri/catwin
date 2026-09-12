@@ -39,4 +39,3 @@ while ($fila = $rs->fetch_array(MYSQLI_BOTH)) :
 
 endwhile;
 
-?>

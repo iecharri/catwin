@@ -36,7 +36,7 @@ $menu6=2;include("menusizda.php");
 
 if (PRUEBA == 1) {
 // *** SERVER_PRUEBAS
-if ($_SESSION['empresa'] == "nuevocat") {
+if ($_SESSION['empresa'] == BDPRUEBA) {
 	echo "Nuevocat es una Empresa de prueba, no se puede hacer copia de seguridad. ";
 	include("pie.php");
 	?>

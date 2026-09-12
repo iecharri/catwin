@@ -130,4 +130,3 @@ function borrar1($link) {
 	$link->query($sql);	
 }
 
-?>

@@ -37,9 +37,13 @@ include("menusizda.php");
 
 <?php
 
+if(!PUEDOCREARBD) {
+echo "<span class='rojo b'>SERVIDOR PARA PRUEBAS. NO SE PUEDEN CREAR EMPRESAS.</span><p></p><br>";
+}
+
 if ($mensaje) {
 	echo $mensaje;
-} else {
+} elseif(PUEDOCREARBD) {
 	include ("tablanuevaemp.php");
 }
 

@@ -52,4 +52,3 @@ $result = $link->query("UPDATE apuntes SET fecha = '$fecha', cuenta = '$cuenta',
 $row_id = 0;
 //$body = 0;
 
-?>

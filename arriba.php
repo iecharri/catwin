@@ -60,7 +60,8 @@ if (!$_SESSION['empresa']) {
 				$linktemp->query("set names 'utf8'");
 				$subresulttemp = $linktemp->query('SHOW TABLES LIKE "subcuent"'); //Se comprueba si existe la TABLA "subcuent"
 				if ($subresulttemp->fetch_array(MYSQLI_BOTH)) { //Solo es cierto si a devuelto datos, eso quiere decir que existe!
-					echo "<option value='".$row[0]."'>".$row[0]."</option>"; //Creando las opciones del select
+					$temp = $row[0]; if($temp == BDPRUEBA) {$temp = "nuevocat";}
+					echo "<option value='".$row[0]."'>".$temp."</option>"; //Creando las opciones del select
 				}
 			}
 		}
@@ -72,7 +73,8 @@ if (!$_SESSION['empresa']) {
 		echo "Empresa (<a href='?v=1' >Seleccionar</a>) <input type='text' name='empresa1' value='' size='20' maxlength='20' /> Usuario <input type='text' name='usuario1' size='15' maxlength='15' /> Clave <input type='password' name='password1' size='15' maxlength='15' /> <input type='submit' value='Conectar' />\n";
 	}
 	if (PRUEBA == 1) {
-	// *** SERVER_PRUEBAS	echo "<br /><span style='font-size:.8em'>Puedes <a href='empresa.php' class='b'>Crear una Empresa</a>";
+	// *** SERVER_PRUEBAS
+	echo "<br /><span style='font-size:.8em'>Puedes <a href='empresa.php' class='b'>Crear una Empresa</a>";
 	echo " o usar la de pruebas <a href='";
 	if (substr(strrchr($_SERVER['SCRIPT_NAME'], "/"), 1) == "empresa.php") {echo "index.php";}
 	echo "?emp=1' class='b'>Nuevocat</a>.";
@@ -83,8 +85,9 @@ if (!$_SESSION['empresa']) {
 } else {
 
 	if ($_SESSION['usuario']) {
+		$temp = $_SESSION['empresa']; if($temp == BDPRUEBA) {$temp = "nuevocat";}
 		echo "<form name='form0' method='post' action='index.php' style='display:inline'>";
-		echo "Empresa <input type='text' name='empresa1' size='20' maxlength='20' readonly='readonly' value='".$_SESSION['empresa']."' /> ";
+		echo "Empresa <input type='text' name='empresa1' size='20' maxlength='20' readonly='readonly' value='".$temp."' /> ";
 		echo "Usuario <input type='text' name='usuario1' size='15' maxlength='15'  readonly='readonly' value='".$_SESSION['usuario']."' /> ";
 		echo "<input type='submit' name='desco' value='Desconectar' /></form>";
 		echo "&nbsp;&nbsp;<a href='equiv.php'>Ver en</a> ";
@@ -104,7 +107,7 @@ if (!$_SESSION['empresa']) {
 <div style='position:absolute;bottom:0px;right:3px;font-size:0.8em'>
 <?php
 echo "<a href='empresa.php'>Crear Empresa</a> | <a href='index.php?x=1'>Acerca de CatWin Net</a> | ";
-echo "<a href='http://downloads.sourceforge.net/catwin/' target='_blank'>Download</a> | ";
+echo "<a href='https://github.com/iecharri/catwin' target='_blank'>Download</a> | ";
 echo date("d-m-Y H:i", time())." CatWin Net v. 0.8 | ";include("colores.php");
 
 ?>
@@ -121,4 +124,3 @@ if (LOG) {
 	include ("log.php");
 }
 
-?>

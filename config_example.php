@@ -26,6 +26,9 @@ define('PASSWORD', 'password');
 define('PRUEBA', 0);
 define('LOG', "");
 define('SSL', '0');
+define('BDPRUEBA', 'nuevocat');
+define('PUEDOCREARBD', 0);
+
 // Cuando se modifica la estructura de las tablas los cambios est&aacute;n en adaptardb.php
 // y se ejecuta cuando ADAPTARTABLAS = 1
 define('ADAPTARTABLAS', '0');
@@ -48,4 +51,3 @@ define('MYSQLDUMP', 'mysqldump');
 
 // y sustituir "/catwin/" por "catwin/" en otroslistados.php y listados1_1.php
 
-?>
