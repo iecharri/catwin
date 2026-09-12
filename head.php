@@ -54,9 +54,21 @@ include("funciones.php");
 <html lang="es">
 
 <head>
-<title>CatWin Net v. 0.8</title>
+<title>CatWin Net – Contabilidad Online | Software Libre</title>
 
 <meta charset="utf-8" />
+<meta name="description" content="CatWin Net es un paquete de contabilidad online de software libre y código abierto, desarrollado con PHP, JavaScript y MySQL para funcionar en Internet e Intranet." />
+<meta name="robots" content="index,follow" />
+<link rel="canonical" href="https://catwin.evai2.net/" />
+
+<meta property="og:title" content="CatWin Net – Contabilidad Online | Software Libre" />
+<meta property="og:description" content="CatWin Net es un paquete de contabilidad online de software libre y código abierto." />
+<meta property="og:url" content="https://catwin.evai2.net/" />
+<meta property="og:type" content="website" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="CatWin Net – Contabilidad Online | Software Libre" />
+<meta name="twitter:description" content="CatWin Net es un paquete de contabilidad online de software libre y código abierto." />
 
 <!-- <meta http-equiv="content-type" content="text/html; charset=UTF-8" /> -->
 
